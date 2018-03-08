@@ -12,6 +12,15 @@ nnoremap 1 0
 vnoremap 0 $ 
 vnoremap 1 0
 
+" タブ移動
+nmap <C-Right> :tabnext<CR>
+nmap <C-Left>  :tabprevious<CR>
+nmap <C-W>     :tabclose<CR>
+
+" Shift + Insert を <C-V> に設定
+cmap <C-v> <S-Insert>
+
+
 " スペース + . で.vimrc"
 nnoremap <Space>. :<C-u>tabedit $MYVIMRC<CR>
 "
@@ -38,9 +47,10 @@ inoremap <C-l> <Right>
 
 
 " colemak keymap run
-silent! source "$HOME/.vim/bundle/vim-colemak/colemak.vim"
+silent! source "$HOME/vimfiles/bundle/vim-colemak/colemak.vim"
 
-nnoremap <expr> / _(":%s/<Cursor>//gn")
+nnoremap <expr> / _(":%s;<Cursor>;;gn")
+nnoremap ? ?\v
 
 function! s:move_cursor_pos_mapping(str, ...)
     let left = get(a:, 1, "<Left>")
