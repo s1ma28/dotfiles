@@ -36,6 +36,7 @@ set laststatus=2
 set mouse=a
 " set cursorline <- invalidated 2017/05/03
 "set nohlsearch
+set hlsearch
 set ignorecase
 set incsearch
 set wildmenu wildmode=list:full
@@ -77,8 +78,10 @@ autocmd FileType html       setlocal sw=2 sts=2 ts=2 et
 
 " クリップボードに貼り付ける
 " sudo apt-get install xsel を実行する必要あり。
-" "vmap <C-c> :w !xsel -ib<CR><CR>
-set clipboard=unnamed
+"vmap <C-c> :w !xsel -ib<CR><CR>
+" ヤンクでクリップボードにコピー
+"set clipboard=unnamed,autoselect
+set clipboard=unnamedplus
 
 " クリップボードにある文字列をvimに直接貼り付ける
 " Shift + Insert 

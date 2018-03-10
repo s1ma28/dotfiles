@@ -9,7 +9,7 @@ nmap <CR> t<CR><ESC>
 
 nnoremap 0 $
 nnoremap 1 0
-vnoremap 0 $ 
+vnoremap 0 $
 vnoremap 1 0
 
 " タブ移動
@@ -17,9 +17,13 @@ nmap <C-Right> :tabnext<CR>
 nmap <C-Left>  :tabprevious<CR>
 nmap <C-W>     :tabclose<CR>
 
-" Shift + Insert を <C-V> に設定
+" クリップボードの内容を貼り付け (Lubuntu で必要)
+imap <C-v> <C-O>"+gp
+cmap <S-Insert> <C-R>+
 cmap <C-v> <S-Insert>
 
+" Deleteキー無効化(コマンドモード中のみ、使える)
+noremap <Del> <Nop>
 
 " スペース + . で.vimrc"
 nnoremap <Space>. :<C-u>tabedit $MYVIMRC<CR>
@@ -42,10 +46,6 @@ set whichwrap=b,s,[,],,~
 "  hh で ESC の代わり
 inoremap <silent> hh <Esc>
 
-"挿入モードでのカーソル移動
-inoremap <C-l> <Right>
-
-
 " colemak keymap run
 silent! source "$HOME/vimfiles/bundle/vim-colemak/colemak.vim"
 
@@ -64,4 +64,4 @@ endfunction
 
 
 " ファイルタイプをtxt に設定。(snippet、展開用)
-nnoremap <C-t> :set ft=txt
+nnoremap <C-t> :set ft=txt<CR>
