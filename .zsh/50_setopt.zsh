@@ -148,6 +148,7 @@ setopt bang_hist
 
 setopt always_last_prompt
 setopt auto_cd
+function chpwd() {ls}
 setopt auto_menu
 setopt auto_param_keys
 setopt auto_param_slash

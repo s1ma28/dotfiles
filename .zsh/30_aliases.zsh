@@ -37,12 +37,15 @@ alias lu='ls -ltur'        # Sort by and show access time, most recent last
 alias lt='ls -ltr'         # Sort by date, most recent last
 alias lr='ls -lR'          # Recursive ls
 
+alias l.='ls -d .*'          # Recursive ls
+alias o='xdg-open'
+
 # The ubiquitous 'll': directories first, with alphanumeric sorting:
 #alias ll='ls -lv --group-directories-first'
 
-alias cp="${ZSH_VERSION:+nocorrect} cp -i"
-alias mv="${ZSH_VERSION:+nocorrect} mv -i"
-alias mkdir="${ZSH_VERSION:+nocorrect} mkdir"
+# alias cp="${ZSH_VERSION:+nocorrect} cp -i"
+# alias mv="${ZSH_VERSION:+nocorrect} mv -i"
+# alias mkdir="${ZSH_VERSION:+nocorrect} mkdir"
 
 autoload -Uz zmv
 alias zmv='noglob zmv -W'
