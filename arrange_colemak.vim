@@ -1,11 +1,3 @@
-" Description {{{
-"   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
-"   Modified by Esko, 2012-09-14.
-"
-"   Load colemak.vim after all other Vim scripts.
-"
-"   Refer to ../README.markdown for keymap explanations.
-" }}}
 " Require Vim >=7.0 {{{
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }}}
