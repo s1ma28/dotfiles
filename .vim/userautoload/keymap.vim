@@ -17,6 +17,11 @@ nmap <C-Right> :tabnext<CR>
 nmap <C-Left>  :tabprevious<CR>
 nmap <C-W>     :tabclose<CR>
 
+" 長い行折り返し（切り替え)
+map <F2> :set wrap! wrap?<CR>
+
+
+
 " クリップボードの内容を貼り付け (Lubuntu で必要)
 imap <C-v> <C-O>"+gp
 cmap <S-Insert> <C-R>+
@@ -64,4 +69,4 @@ endfunction
 
 
 " ファイルタイプをtxt に設定。(snippet、展開用)
-nnoremap <C-t> :set ft=txt<CR>
+nnoremap <C-f>t :set ft=txt<CR>

@@ -39,6 +39,7 @@ alias lr='ls -lR'          # Recursive ls
 
 alias l.='ls -d .*'          # Recursive ls
 alias o='xdg-open'
+alias l='less'
 
 # The ubiquitous 'll': directories first, with alphanumeric sorting:
 #alias ll='ls -lv --group-directories-first'
@@ -490,7 +491,6 @@ git_modified_files() {
 
 alias t="tree -C"
 
-alias l="ls -l"
 
 # alias f='fzf --preview="pygmentize {}" --preview-window=right:60% --ansi --bind "enter:execute(vim {})"'
 
