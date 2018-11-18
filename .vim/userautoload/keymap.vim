@@ -22,8 +22,9 @@ map <F2> :set wrap! wrap?<CR>
 
 " インサートmode中でも、左右に移動
 "  # プラグインの上書きに負けないようにする際は、以下のを使う
-inoremap <C-h> <Left>
-autocmd VimEnter * imap <C-i> <Right>
+"  # "<C-i> を上書きすると、<tab>が使えなくなる。。。
+"inoremap <C-h> <Left>
+" autocmd VimEnter * imap <C-i> <Right>
 
 " クリップボードの内容を貼り付け (Lubuntu で必要)
 imap <C-v> <C-O>"+gp
