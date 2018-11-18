@@ -20,7 +20,10 @@ nmap <C-W>     :tabclose<CR>
 " 長い行折り返し（切り替え)
 map <F2> :set wrap! wrap?<CR>
 
-
+" インサートmode中でも、左右に移動
+"  # プラグインの上書きに負けないようにする際は、以下のを使う
+inoremap <C-h> <Left>
+autocmd VimEnter * imap <C-i> <Right>
 
 " クリップボードの内容を貼り付け (Lubuntu で必要)
 imap <C-v> <C-O>"+gp
