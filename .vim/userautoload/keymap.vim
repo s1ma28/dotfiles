@@ -7,10 +7,10 @@ nnoremap g* g*zz
 nnoremap g# g#zz
 nmap <CR> t<CR><ESC>
 
-nnoremap 0 $
-nnoremap 1 0
-vnoremap 0 $
-vnoremap 1 0
+" nnoremap 0 $
+" nnoremap 1 0
+" vnoremap 0 $
+" vnoremap 1 0
 
 " タブ移動
 nmap <C-Right> :tabnext<CR>
@@ -20,7 +20,6 @@ nmap <C-W>     :tabclose<CR>
 " 長い行折り返し（切り替え)
 map <F2> :set wrap! wrap?<CR>
 
-" インサートmode中でも、左右に移動
 "  # プラグインの上書きに負けないようにする際は、以下のを使う
 "  # "<C-i> を上書きすると、<tab>が使えなくなる。。。
 "inoremap <C-h> <Left>
@@ -52,8 +51,9 @@ set backspace=start,eol,indent
 "  ~ - ~            ノーマルモード
 set whichwrap=b,s,[,],,~
 
-"  hh で ESC の代わり
-inoremap <silent> hh <Esc>
+"  hh で ESC の代わり -> 「Ctrl + c」で戻すようにした
+" inoremap <silent> hh <Esc>
+"
 
 " colemak keymap run
 silent! source "$HOME/vimfiles/bundle/vim-colemak/colemak.vim"
