@@ -53,7 +53,9 @@ set whichwrap=b,s,[,],,~
 
 "  hh で ESC の代わり -> 「Ctrl + c」で戻すようにした
 " inoremap <silent> hh <Esc>
-"
+inoremap <C-c> <ESC>    " InsertLeaveイベント発行のため "
+" ESC 時、IME OFF
+autocmd InsertLeave * :call system('fcitx-remote -c')
 
 " colemak keymap run
 silent! source "$HOME/vimfiles/bundle/vim-colemak/colemak.vim"
