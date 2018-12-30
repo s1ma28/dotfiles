@@ -53,7 +53,9 @@ set whichwrap=b,s,[,],,~
 
 "  hh で ESC の代わり -> 「Ctrl + c」で戻すようにした
 " inoremap <silent> hh <Esc>
-inoremap <C-c> <ESC>    " InsertLeaveイベント発行のため "
+
+" InsertLeaveイベント発行のため
+inoremap <C-c> <ESC>
 " ESC 時、IME OFF
 autocmd InsertLeave * :call system('fcitx-remote -c')
 
