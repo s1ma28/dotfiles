@@ -38,7 +38,8 @@ call neobundle#begin(expand('~/.vim/bundle'))
     "Frequently used key: "<C-e>,"
     
     " JavaScript
-    NeoBundle 'jelera/vim-javascript-syntax'
+    " NeoBundle 'jelera/vim-javascript-syntax'
+    NeoBundle 'isRuslan/vim-es6.git'
 
     " CoffeeScript
     NeoBundle 'kchmck/vim-coffee-script'

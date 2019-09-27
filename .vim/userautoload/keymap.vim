@@ -78,3 +78,7 @@ endfunction
 
 " ファイルタイプをtxt に設定。(snippet、展開用)
 nnoremap <C-f>t :set ft=txt<CR>
+
+" 現在の時刻を挿入。
+nnoremap <C-f>; <ESC>a<C-r>=strftime("%Y/%m/%d(%a) %H:%M:%S")
+

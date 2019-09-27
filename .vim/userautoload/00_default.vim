@@ -14,8 +14,9 @@ set number
 " 73 桁目以降の色を変える ( cc でToggle )
 noremap <Plug>(ToggleColorColumn)
             \ :<c-u>let &colorcolumn = len(&colorcolumn) > 0 ? '' :
-            \   join(range(80, 9999), ',')<CR>
+            \   join(range(70, 9999), ',')<CR>
 nmap cc <Plug>(ToggleColorColumn)
+highlight ColorColumn guibg=#202020 ctermbg=lightgray
 
 " ファイル名表示
 set statusline=%F
@@ -76,6 +77,7 @@ autocmd BufRead,BufNewFile *.txt set filetype=txt
 autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 autocmd FileType html       setlocal sw=2 sts=2 ts=2 et
 autocmd FileType javascript setlocal sw=2 sts=2 ts=2 et
+autocmd FileType json       setlocal sw=2 sts=2 ts=2 et
 
 " クリップボードに貼り付ける
 " sudo apt-get install xsel を実行する必要あり。
